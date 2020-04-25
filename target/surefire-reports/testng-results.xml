@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicking on login link : [[ChromeDriver: chrome on WINDOWS (1437fc468dec04420169b5947fb7c464)] -> link text: Log in]<br>]]>
+    </line>
+    <line>
+      <![CDATA[Getting text from : [[ChromeDriver: chrome on WINDOWS (1437fc468dec04420169b5947fb7c464)] -> xpath: //div[@class='page-title']//h1]<br>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-04-25T08:43:01Z" name="testsuite" finished-at="2020-04-25T08:43:26Z" duration-ms="25420">
+    <groups>
+    </groups>
+    <test started-at="2020-04-25T08:43:01Z" name="Login Test" finished-at="2020-04-25T08:43:26Z" duration-ms="25420">
+      <class name="com.demo.nopcommerce.testsuite.LoginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.demo.nopcommerce.testsuite.LoginTest@3012646b]" started-at="2020-04-25T08:43:01Z" name="openBrowser" finished-at="2020-04-25T08:43:22Z" duration-ms="20579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demo.nopcommerce.testsuite.LoginTest@3012646b]" started-at="2020-04-25T08:43:22Z" name="setUp" finished-at="2020-04-25T08:43:22Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserShouldNavigateToLoginPage()[pri:0, instance:com.demo.nopcommerce.testsuite.LoginTest@3012646b]" started-at="2020-04-25T08:43:22Z" name="verifyUserShouldNavigateToLoginPage" finished-at="2020-04-25T08:43:25Z" duration-ms="2931" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on login link : [[ChromeDriver: chrome on WINDOWS (1437fc468dec04420169b5947fb7c464)] -> link text: Log in]<br>]]>
+            </line>
+            <line>
+              <![CDATA[Getting text from : [[ChromeDriver: chrome on WINDOWS (1437fc468dec04420169b5947fb7c464)] -> xpath: //div[@class='page-title']//h1]<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUserShouldNavigateToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.nopcommerce.testsuite.LoginTest@3012646b]" started-at="2020-04-25T08:43:25Z" name="tearDown" finished-at="2020-04-25T08:43:26Z" duration-ms="1760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.nopcommerce.testsuite.LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- testsuite -->
+</testng-results>

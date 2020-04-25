@@ -61,7 +61,6 @@ public class Utility extends BasePage {
         driver.findElement(by).sendKeys(str);
 
 
-
     }
 
     public void sendTextToElement(WebElement element, String str) {
@@ -217,15 +216,15 @@ public class Utility extends BasePage {
         return sb.toString();
     }
 
-    /*
-    this method will clear previous stored data
+    /**
+     * This method will clear previous stored data
      */
-    public void clearTextFromField(By by){
+    public void clearTextFromField(By by) {
         driver.findElement(by).sendKeys(Keys.CONTROL + "a");
         driver.findElement(by).sendKeys(Keys.DELETE);
     }
 
-    public void sendTabAndEnterKey(By by){
+    public void sendTabAndEnterKey(By by) {
         driver.findElement(by).sendKeys(Keys.TAB);
         //driver.findElement(by).sendKeys(Keys.ENTER);
     }
@@ -245,7 +244,7 @@ public class Utility extends BasePage {
         }
     }
 
-    public static String currentTimeStamp(){
+    public static String currentTimeStamp() {
         Date d = new Date();
         return d.toString().replace(":", "_").replace(" ", "_");
     }
@@ -256,7 +255,7 @@ public class Utility extends BasePage {
         File source = ts.getScreenshotAs(OutputType.FILE);
 
         // After execution, you could see a folder "FailedTestsScreenshots" under screenshot folder
-        String destination = System.getProperty("user.dir") + "/src/main/java/com/demo/nopcommerce/screenshots/" +screenshotName +dateName +".png";
+        String destination = System.getProperty("user.dir") + "/src/main/java/com/demo/nopcommerce/screenshots/" + screenshotName + dateName + ".png";
         File finalDestination = new File(destination);
         try {
             FileUtils.copyFile(source, finalDestination);
@@ -267,13 +266,13 @@ public class Utility extends BasePage {
     }
 
     /*
-Screenshot methods
+     Screenshot methods
      */
     public static String takeScreenShot(String fileName) {
         String filePath = System.getProperty("user.dir") + "/test-output/html/";
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File scr1 = screenshot.getScreenshotAs(OutputType.FILE);
-        String imageName = fileName+currentTimeStamp()+".jpg";
+        String imageName = fileName + currentTimeStamp() + ".jpg";
         String destination = filePath + imageName;
         try {
             FileUtils.copyFile(scr1, new File(destination));
